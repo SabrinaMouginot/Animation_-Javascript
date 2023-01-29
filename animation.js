@@ -1,9 +1,8 @@
 const titre = document.querySelector(".AnimationImg"); // pour stocker l'animation
-let i = 0;
+
 
 function hautBas(){
-    console.log(i);
-    i++;
+
     requestAnimationFrame(hautBas);
 }
 
