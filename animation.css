@@ -1,74 +1,73 @@
 .img-fluid{
     width: 90px;
     height: 90px;
-}
-
-/* Une partie était caché sous la barre de navigation en haut de page. 
-J'ai donc créé un margin en haut du document pour que l'ensemble puisse être vu. 
-Et j'ai pensé à utilisé les medias queries pour que ce margin-top s'adaptte en fonctionne de la taille de l'écran.*/
-
-
-/* @media only screen and (min-width : 1224px){ */
-    /* Desktops et laptops: Styles pour cette Media Queries */
-/* .sabrina{
-    margin-top: 100px;
-}
-}
-
-@media only screen and (max-width : 1223px) and (min-width : 997px) {
-.sabrina{
-    margin-top: 125px;
-}
-}
-
-@media only screen and (max-width : 996px) and (min-width : 769px) {
-.sabrina{
-    margin-top: 200px;
-}
-}
-
-@media only screen and (max-width : 768px) {
-.sabrina{
-    margin-top: 500px;
-}
-} */
-
-
-body{
-    margin: 0%;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    align-items: center;
-    font-family: monospace;
-    font-size: 48px;
-    background: rgb(0, 0, 0, 0.1); 
-    color: rgb(0, 0, 0, 0.9);
-}
+} /* image de la navbar */
 
 .container{
-    padding-top: 500px ;
+    padding-top: 30% ;
 }
+
+.languages{
+    padding-top: 30% ;
+}
+
+/* ******************************************* ANIMATION *************************************************** */
 
 .AnimationImg{
     display: inline-flex;       
     /* aligner les 4 images à l'horizontal */
 }
+
+.AnimationImg {
+    padding: 20% 0 0 0;
+}
+
 .AnimationImg .img-fluid{
-    margin: 0% 20%;
-    transition-delay: 1s;
-  }
+margin: 0 40% 40% 0;
+}
 
-  footer{
-    font-weight: bolder;
-  }
+/* ***************************************** MEDIAS QUERIES ************************************************** */
+/* (responsive pour que la barre de navigation ne cache pas le contenu sur un écran plus petit)  */
 
-  .footer{
-    font-weight: lighter;
-    font-size: smaller;
-  }
-  
-  .back{
-    width: 50px;
-    height: 50px;
-  }
+@media only screen and (max-width : 768px) and (min-width : 651px) {
+    .AnimationImg {
+        padding: 65% 0 0 0;
+    }
+    .languages{
+        padding-top: 80% ;
+    }
+}
+    
+@media only screen and (max-width : 650px) and (min-width : 400px){
+.AnimationImg {
+    padding: 100% 0 0 0;
+}
+.languages{
+    padding-top: 140% ;
+}
+} 
+
+@media only screen and (max-width : 399px) {
+    .AnimationImg {
+        padding: 175% 0 0 0;
+    }
+    .languages{
+        padding-top: 280% ;
+    }
+    } 
+
+/* ************************************************ FOOTER ******************************************************* */
+
+footer{
+font-weight: bolder;
+}
+
+.footer{
+font-weight: lighter;
+font-size: smaller;
+}
+
+.back{
+width: 50px;
+height: 50px;
+}
