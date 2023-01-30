@@ -47,5 +47,10 @@ body{
 }
 
 .container{
-    padding: 475px;
+    padding: 500px;
+}
+
+.languages{
+    list-style-type: none;
+
 }
