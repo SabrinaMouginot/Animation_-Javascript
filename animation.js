@@ -5,10 +5,10 @@ let direction = -1;
 // pour animer , j'ai créé une variable let direction avec une condition.
 
 function hautBas(){
-    if(topPosition == 520){     
+    if(topPosition == 400){     
         direction = 1              // l'image descend (direction positive + variable définit bégative = négatif donc direction vers le bas)
     }
-    else if(topPosition == 20){
+    else if(topPosition == 50){
         direction = -1              // l'image monte (direction négative + variable définit négative = positif donc direction vers le haut)
     }
     topPosition += -2 * direction;
