@@ -26,20 +26,14 @@ Et j'ai pensé à utilisé les medias queries pour que ce margin-top s'adaptte e
 }
 }
 
-@media only screen and (max-width : 768px) and (min-width : 321px) {
+@media only screen and (max-width : 768px) {
 .sabrina{
-    margin-top: 400px;
-}
-}
-
-@media only screen and (max-width : 321px){
-.sabrina{
-    margin-top: 400px;
+    margin-top: 500px;
 }
 }
 
 body{
-    margin: 0;
+    margin: 0%;
     display: flex;
     justify-content: center;
     min-height: 100vh;
