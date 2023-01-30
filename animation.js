@@ -6,10 +6,10 @@ let direction = -1;
 
 function hautBas(){
     if(topPosition == 648){     
-        direction = 1              // l'image monte
+        direction = 1              // l'image descend (direction positive + variable définit bégative = négatif donc direction vers le bas)
     }
     else if(topPosition == 140){
-        direction = -1              // l'image descend
+        direction = -1              // l'image monte (direction négative + variable définit négative = positif donc direction vers le haut)
     }
     topPosition += -2 * direction;
     Image.style.top = `${topPosition}px`; // ajouter par exemple 2 à sa position de top pour pouvoir descendre.
