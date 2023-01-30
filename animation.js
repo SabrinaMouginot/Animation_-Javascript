@@ -1,4 +1,4 @@
-const titre = document.querySelector(".AnimationImg"); // pour stocker l'animation
+const Image = document.querySelector(".AnimationImg"); // pour stocker l'animation
 Image.style.position = "absolute";      // Pour pouvoir la positionner exactement où on veut
 
 function hautBas(){
