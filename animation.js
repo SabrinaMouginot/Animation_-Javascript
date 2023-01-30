@@ -1,14 +1,14 @@
 const Image = document.querySelector(".AnimationImg"); // pour stocker l'animation
 Image.style.position = "absolute";      // Pour pouvoir la positionner exactement où on veut
-let topPosition = 0;
+let topPosition = 350;
 let direction = -1;
 // pour animer , j'ai créé une variable let direction avec une condition.
 
 function hautBas(){
-    if(topPosition == 400){     
+    if(topPosition == 580){     
         direction = 1              // l'image descend (direction positive + variable définit bégative = négatif donc direction vers le bas)
     }
-    else if(topPosition == 50){
+    else if(topPosition == 350){
         direction = -1              // l'image monte (direction négative + variable définit négative = positif donc direction vers le haut)
     }
     topPosition += -2 * direction;

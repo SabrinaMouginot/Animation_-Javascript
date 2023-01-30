@@ -7,6 +7,7 @@
 J'ai donc créé un margin en haut du document pour que l'ensemble puisse être vu. 
 Et j'ai pensé à utilisé les medias queries pour que ce margin-top s'adaptte en fonctionne de la taille de l'écran.*/
 
+
 @media only screen and (min-width : 1224px){
     /* Desktops et laptops: Styles pour cette Media Queries */
 .sabrina{
@@ -31,6 +32,7 @@ Et j'ai pensé à utilisé les medias queries pour que ce margin-top s'adaptte e
     margin-top: 500px;
 }
 }
+
 
 body{
     margin: 0%;
