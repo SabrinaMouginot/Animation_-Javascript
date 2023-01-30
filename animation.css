@@ -8,9 +8,9 @@ J'ai donc créé un margin en haut du document pour que l'ensemble puisse être 
 Et j'ai pensé à utilisé les medias queries pour que ce margin-top s'adaptte en fonctionne de la taille de l'écran.*/
 
 
-@media only screen and (min-width : 1224px){
+/* @media only screen and (min-width : 1224px){ */
     /* Desktops et laptops: Styles pour cette Media Queries */
-.sabrina{
+/* .sabrina{
     margin-top: 100px;
 }
 }
@@ -31,7 +31,7 @@ Et j'ai pensé à utilisé les medias queries pour que ce margin-top s'adaptte e
 .sabrina{
     margin-top: 500px;
 }
-}
+} */
 
 
 body{
@@ -44,4 +44,8 @@ body{
     font-size: 48px;
     background: rgb(0, 0, 0, 0.1); 
     color: rgb(0, 0, 0, 0.9);
+}
+
+.container{
+    padding: 475px;
 }
