@@ -1,7 +1,10 @@
 const Image = document.querySelector(".AnimationImg"); // pour stocker l'animation
 Image.style.position = "absolute";      // Pour pouvoir la positionner exactement où on veut
+let topPosition = 0;
 
 function hautBas(){
+    topPosition += 2;
+    Image.style.top = `${topPosition}px`; // ajouter par exemple 2 à sa position de top pour pouvoir descendre.
 
     requestAnimationFrame(hautBas);
 }
