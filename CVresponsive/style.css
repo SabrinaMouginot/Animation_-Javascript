@@ -1,0 +1,185 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display:flex; /**Pour flexibilité des blocs (flexbox) dans l'ensemble du body**/
+}
+.container{
+   display: grid;
+   grid-auto-rows: minmax(auto,auto);
+   grid-template-columns: repeat(1,1%);
+   grid-template-columns: 25%;
+   width:100%;
+}
+.colonne1{
+   grid-column-start: 1;
+   grid-column-end: 1;
+   grid-row: 1;
+}
+.colonne2{
+   grid-column-start: 2;
+   grid-column-end: 4;
+   grid-row: 1;
+}
+footer{
+   grid-column-start: 1;
+   grid-column-end: 4;
+   grid-row: 2;
+}
+
+@media screen and (max-width: 800px) {
+   .container{
+      display: grid;
+      grid-template-rows: repeat(3,auto);
+      grid-auto-columns: minmax(auto, auto);
+      grid-template-columns: 100%;
+      grid-template-rows:100%;
+      margin:auto;
+      padding-right: 5px;
+   }
+   .colonne1 {
+      grid-column: 1;
+      grid-row-start: auto;
+      grid-row-end: auto;
+   }
+   .colonne2 {
+      grid-column: 1;
+      grid-row-start: auto;
+      grid-row-end: auto;
+   }
+   .footer{
+      grid-column: 1;
+      grid-row-start: auto;
+      grid-row-end: auto;
+   }
+}
+
+/******************************************** LA COLONNE DE GAUCHE *************************************************************/
+
+.colonne1{
+   width: 100%;
+   display: flex;  /**Pour aligner tout**/
+   flex-direction: column;
+   flex-wrap: wrap; /**pour que les liens ne s'entassent pas quand on réduit, ça permet de les empiler.**/
+   padding-bottom: 270px;
+   background-color: rgba(38, 0, 255, 0.678);
+   color: beige;
+   padding-left: 2%;
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+#Photo img{
+   border-radius: 50%; /*50% pour faire un cercle*/
+   height: 80%;
+   width: 80%; /**En %, la largeur de la photo devient flexible quand je réduis ou agrandit la taille de la fenêtre**/
+   padding: 5%;
+   box-shadow: 5px 5px 1px black;
+} 
+.INFOS{
+   padding: 5%;
+   margin: 5%;
+}
+.wrapper { 
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   grid-gap: 10px;
+   grid-auto-rows: minmax(50px, auto);
+ }
+.enveloppe {
+   grid-column: 1 ;
+   grid-row: 1/3;
+ }
+.Adresse {
+   grid-column: 2 / 4;
+   grid-row: 1;
+ }
+.mail{
+   grid-column: 1;
+   grid-row: 2;
+ }
+.Email {
+   grid-column: 2/4;
+   grid-row: 2;
+ }
+.Tel{
+   grid-column: 1;
+   grid-row: 3;
+ }
+.Numero {
+   grid-column: 2/4;
+   grid-row: 3;
+ } 
+
+.DIVERS{
+   padding: 5%;
+   margin: 5%;
+}
+.Langues {
+   padding: 10%;
+   font-weight: bold;
+}
+.Informatique{
+   padding: 10%;
+   font-weight: bold;
+}
+/******************************************** LA COLONNE DE DROITE *************************************************************/
+.colonne2{
+   width: 100%;
+   display: flex; /** Pour la flexbox **/
+   flex-direction: column;/** Pour la flexbox **/
+   flex-wrap: wrap;
+   background-color: rgb(196, 198, 207);
+   padding-left: 3px ;
+   font-family:'segoe UI';
+}
+h1{
+   font-family: 'Iceberg', 'cursive';
+   font-weight: bold;
+   font-size: 2.5em;
+   text-transform: uppercase;
+}
+h4{
+   font-size: 2em;
+   color: rgba(38, 0, 255, 0.678);
+}
+               /********** ENTETE **********/
+.metier{
+   text-align: left;
+   margin-left: 2%;
+
+}
+.accroche{
+   font-family: Tahoma; /**police d'écriture**/
+}
+               /********** COMPETENCES **********/
+.competences{
+   margin-left: 10%;
+}
+               /********** FORMATION **********/
+.qualifications{
+   margin-left: 10%;
+}
+.Formation {  /**span**/
+   padding-left: 100px;
+}
+               /********** PROFESSIONS **********/
+.professions{
+   margin-left: 10%;
+}
+.experience {  /**span**/
+   padding-left: 50px;
+}
+               /********** LOISIRS **********/
+.loisirs{
+   margin-bottom: 20%;
+   margin-left: 10%;
+}
+a:hover{
+   color: rgb(255, 0, 0); /**animation sur le lien**/
+}
+               /********** FOOTER **********/
+footer{
+   background-color: rgb(196, 198, 207);
+   color: rgb(40, 0, 185);
+   padding: 0 5% 10% 0;
+   text-align: right;
+   margin-left: 0 auto;
+}
